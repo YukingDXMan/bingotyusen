@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BINGO 抽選機</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BINGO 抽選機</h1>
+    <div id="current-number">START</div>
+    <div class="buttons">
+      <button id="draw-button">数字を引く</button>
+    </div>
+    <div class="history">
+      <h2>抽選履歴</h2>
+      <div id="history-list" class="row-layout">
+        <div class="history-row">
+          <span class="column-label B">B列</span>
+          <div class="row-values" id="values-B"></div>
+        </div>
+        <div class="history-row">
+          <span class="column-label I">I列</span>
+          <div class="row-values" id="values-I"></div>
+        </div>
+        <div class="history-row">
+          <span class="column-label N">N列</span>
+          <div class="row-values" id="values-N"></div>
+        </div>
+        <div class="history-row">
+          <span class="column-label G">G列</span>
+          <div class="row-values" id="values-G"></div>
+        </div>
+        <div class="history-row">
+          <span class="column-label O">O列</span>
+          <div class="row-values" id="values-O"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
