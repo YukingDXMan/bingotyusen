@@ -35,7 +35,6 @@ function drawNumber() {
   const number = numbers.splice(randomIndex, 1)[0];
   drawnNumbers.push(number);
 
-  currentNumber.innerHTML = `${number}<div class="column-info">${getColumnInfo(number)}</div>`;
 
   const columnKey = getColumnKey(number);
   const valuesDiv = document.getElementById(`values-${columnKey}`);
